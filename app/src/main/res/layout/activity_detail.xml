@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1C1C1E"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/back_button"
+        android:layout_width="32dp"
+        android:layout_height="28dp"
+        android:layout_gravity="start"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/panah" />
+
+    <ImageView
+        android:id="@+id/logo_image"
+        android:layout_width="239dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/description_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Description"
+        android:textColor="#FAFAFA"
+        android:textSize="16sp"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:id="@+id/movie_poster"
+        android:layout_width="185dp"
+        android:layout_height="240dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img" />
+
+    <TextView
+        android:id="@+id/movie_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="Dilan 1990"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/movie_genre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Horror | Action"
+        android:textColor="#AAAAAA"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/movie_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:text="⭐ 4.7"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/movie_description"
+        android:layout_width="431dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="16dp"
+        android:background="#333333"
+        android:padding="16dp"
+        android:text="Film Dilan 1990 memulai kisahnya dengan kepindahan Milea (Vanesha Prescilla) dan keluarganya ke Bandung. Ini pun menjadi petualangan dan babak baru bagi Milea. Peristiwa ini juga yang kemudian mempertemukan Milea dengan Dilan (Iqbaal Ramadhan), murid yang dikenal sebagai salah satu anggota geng motor di kota itu."
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btn_book_tickets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#6200EE"
+        android:text="Book Tickets"
+        android:textColor="#FFFFFF" />
+</LinearLayout>
