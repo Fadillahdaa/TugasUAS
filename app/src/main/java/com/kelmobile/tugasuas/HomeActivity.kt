@@ -31,10 +31,10 @@ class HomeActivity : AppCompatActivity() {
             R.drawable.img_9
         )
 
-        val adapter = ImagePagerAdapter(imageList) { position ->
+        val adapter = ImagePagerAdaptor(imageList) { position ->
             // Handle click event
             val intent = Intent(this, DetailActivity::class.java)
-            intent.putExtra("image_res", imageList[position])
+            intent.putExtra("image_res", imageList[position as Int])
             startActivity(intent)
         }
         viewPager.adapter = adapter

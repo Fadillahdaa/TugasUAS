@@ -9,7 +9,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
 class MenuAdaptor(private val menuList: List<MenuItem>) :
-    RecyclerView.Adapter<MenuAdapter.MenuViewHolder>() {
+    RecyclerView.Adapter<MenuAdaptor.MenuViewHolder>() {
 
     inner class MenuViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val imageMenu: ImageView = itemView.findViewById(R.id.imageMenu)

@@ -32,7 +32,7 @@ class DetailActivity : AppCompatActivity() {
 
         // Set up button click listener
         btnBookTickets.setOnClickListener {
-            val intent = Intent(this, TicketBookingActivity::class.java)
+            val intent = Intent(this, TiketBookingactivity::class.java)
             startActivity(intent)
         }
     }

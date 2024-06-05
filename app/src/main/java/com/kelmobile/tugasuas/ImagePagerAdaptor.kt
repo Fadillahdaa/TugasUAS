@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class ImagePagerAdaptor : AppCompatActivity() {
+class ImagePagerAdaptor(imageList: List<Int>, param: (Any) -> Unit) : AppCompatActivity() {
     private lateinit var viewPager: ViewPager2
     private lateinit var bottomNavigationView: BottomNavigationView
 

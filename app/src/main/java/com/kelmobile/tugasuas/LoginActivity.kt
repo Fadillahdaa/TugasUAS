@@ -30,21 +30,6 @@ class LoginActivity : AppCompatActivity() {
         btnLogin = findViewById(R.id.btnLogin)
         tvSignUp = findViewById(R.id.tvSignUp)
 
-        btnLogin.setOnClickListener {
-            val email = etEmail.text.toString()
-            val password = etPassword.text.toString()
-            if (email == "Rhehbhek@gmail.com" && password == "password") {
-                // Logic for successful login
-                startActivity(Intent(this, HomeActivity::class.java))
-            } else {
-                tvError.visibility = TextView.VISIBLE
-            }
-        }
-
-        tvSignUp.setOnClickListener {
-            // Navigate to Sign Up Activity
-            startActivity(Intent(this, SignUpActivity::class.java))
-        }
 
         etPassword.addTextChangedListener(object : TextWatcher {
             override fun afterTextChanged(s: Editable?) {

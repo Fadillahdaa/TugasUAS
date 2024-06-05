@@ -21,7 +21,7 @@ class MenuActivity : AppCompatActivity() {
             MenuItem("Advantageous Dual Menus", "Various combinations", 30.0)
         )
 
-        val adapter = MenuAdapter(menuList)
+        val adapter = MenuAdaptor(menuList)
         recyclerView.adapter = adapter
     }
 }
