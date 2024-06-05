@@ -21,11 +21,9 @@
     <EditText
         android:id="@+id/search_bar"
         android:layout_width="395dp"
-        android:layout_height="40dp"
+        android:layout_height="82dp"
         android:layout_below="@id/title"
         android:layout_marginTop="16dp"
-        android:background="@drawable/Text_Input"
-        android:drawableStart="@drawable/ic_search"
         android:drawablePadding="10dp"
         android:hint="Search Places"
         android:padding="10dp"

@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000000"
-    tools:context=".ProfileActivity">
+    tools:context=".ProfilActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,38 +13,13 @@
         android:layout_marginTop="16dp"
         android:gravity="center_horizontal">
 
-        <ImageView
-            android:id="@+id/profileImage"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:src="@drawable/orang"
-            android:layout_gravity="center"
-            android:layout_marginBottom="8dp"
-            android:background="@drawable/circle_background" />
-
-        <TextView
-            android:id="@+id/profileName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Robert Johnson"
-            android:textColor="#FFFFFF"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:layout_marginBottom="4dp" />
-
-        <TextView
-            android:id="@+id/profileJoinDate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Joined: 20th April"
-            android:textColor="#AAAAAA" />
     </LinearLayout>
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/profileImage"
-        android:padding="16dp">
+        android:padding="16dp"
+        tools:ignore="NotSibling">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -63,6 +38,15 @@
                 android:layout_marginBottom="8dp" />
 
             <!-- Add Home -->
+
+            <ImageView
+                android:id="@+id/profileImage"
+                android:layout_width="118dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/orang">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -75,7 +59,8 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@drawable/ic_home"
-                    android:tint="#2196F3" />
+                    android:background="#0000ff"
+                     />
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -97,13 +82,15 @@
                         android:text="Add your home address to find shuttle easily"
                         android:textColor="#AAAAAA"
                         android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_arrow_right"
+                        android:background="#FFFFFF"/>
                 </LinearLayout>
 
-                <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:src="@drawable/ic_arrow_right"
-                    android:tint="#FFFFFF" />
+
             </LinearLayout>
 
             <!-- Add Work -->
@@ -119,7 +106,7 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@drawable/ic_work"
-                    android:tint="#2196F3" />
+                    android:background="#0000ff"/>
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -147,7 +134,7 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@drawable/ic_arrow_right"
-                    android:tint="#FFFFFF" />
+                    android:background="#FFFFFF"/>
             </LinearLayout>
 
             <!-- Reset Password -->
@@ -163,7 +150,7 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@drawable/ic_password"
-                    android:tint="#2196F3" />
+                    android:background="#0000ff" />
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -191,7 +178,7 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@drawable/ic_arrow_right"
-                    android:tint="#FFFFFF" />
+                    android:background="#FFFFFF" />
             </LinearLayout>
 
             <!-- Delete Account -->
@@ -207,7 +194,7 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@drawable/ic_delete"
-                    android:tint="#2196F3" />
+                    android:background="#0000ff" />
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -235,7 +222,7 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@drawable/ic_arrow_right"
-                    android:tint="#FFFFFF" />
+                    android:background="#FFFFFF" />
             </LinearLayout>
 
             <!-- Safety Section -->
@@ -262,7 +249,7 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@drawable/ic_sos"
-                    android:tint="#F44336" />
+                    android:background="#0000ff" />
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -290,7 +277,7 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@drawable/ic_arrow_right"
-                    android:tint="#FFFFFF" />
+                    android:background="#FFFFFF" />
             </LinearLayout>
 
             <!-- Manage Trusted Contacts -->
@@ -306,7 +293,7 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@drawable/ic_trusted_contacts"
-                    android:tint="#2196F3" />
+                    android:background="#0000ff" />
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -334,7 +321,7 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@drawable/ic_arrow_right"
-                    android:tint="#FFFFFF" />
+                    android:background="#FFFFFF" />
             </LinearLayout>
 
             <!-- Others Section -->
@@ -361,7 +348,7 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@drawable/ic_terms"
-                    android:tint="#2196F3" />
+                    android:background="#0000ff" />
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -373,7 +360,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Terms & Conditions"
+                        android:text="Terms&Conditions"
                         android:textColor="#FFFFFF"
                         android:textSize="16sp" />
 
@@ -389,7 +376,7 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@drawable/ic_arrow_right"
-                    android:tint="#FFFFFF" />
+                    android:background="#FFFFFF" />
             </LinearLayout>
 
             <!-- Privacy Policy -->
@@ -405,7 +392,7 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@drawable/ic_privacy"
-                    android:tint="#2196F3" />
+                    android:background="#0000ff" />
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -433,8 +420,9 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@drawable/ic_arrow_right"
-                    android:tint="#FFFFFF" />
+                    android:background="#FFFFFF" />
             </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>
